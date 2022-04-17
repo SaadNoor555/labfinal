@@ -1,0 +1,20 @@
+<p>Welcome</p>
+<form>
+    <div>
+      <label for="firstname" >First Name </label>
+      <input type="text" id="firstname" [(ngModel)]="newuser.firstName" [ngModelOptions]="{standalone: true}">
+      <label for="lastname" >Last Name </label>
+      <input type="text" id="lastname" [(ngModel)]="newuser.lastName" [ngModelOptions]="{standalone: true}">
+      <br>
+      <br>
+      <label for="email" >Email </label>
+      <input type="email"id="email" [(ngModel)]="newuser.email" [ngModelOptions]="{standalone: true}">
+      <br>
+      <br>
+      <label for="address">Address</label>
+      <input type="text" id="address" [(ngModel)]="newuser.address" [ngModelOptions]="{standalone: true}">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="addUser()">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="cancel()">Cancel</button>
+
+</form>
